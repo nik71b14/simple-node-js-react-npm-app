@@ -1,5 +1,6 @@
 pipeline {
     agent {
+        // Usa l'istanza Docker in Docker come host per creare questo container
         docker {
             image 'node:20.11.0-alpine3.19' 
             args '-p 3000:3000' 
